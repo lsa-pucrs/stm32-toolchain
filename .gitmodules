@@ -1,0 +1,6 @@
+[submodule "stlink"]
+	path = stlink
+	url = https://github.com/texane/stlink
+[submodule "stm32f103c8t6"]
+	path = stm32f103c8t6
+	url = https://github.com/ve3wwg/stm32f103c8t6

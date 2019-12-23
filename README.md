@@ -132,3 +132,9 @@ Alternatively, you can run "make flash" as root. If all went well, you should se
 
 * Olayiwola Ayinde's "[Programming STM32 on Linux](https://medium.com/@olayiwolaayinde/programming-stm32-on-linux-d6a6ee7a8d8d)" tutorial
 * Warren Guy's "[libopencm3 and FreeRTOS](https://github.com/ve3wwg/stm32f103c8t6)" template repository
+
+## Troubleshooting
+
+* Communication problems when flashing (e.g., LIBUSB timeout error)
+
+You may need to update your STLink firmware. Follow [this](http://www.emcu.eu/how-to-update-the-st-link-fw-under-linux/) tutorial on how to do so.

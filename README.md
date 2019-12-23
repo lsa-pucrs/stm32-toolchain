@@ -17,16 +17,23 @@ be prudent to replace them with newer versions when available.
 
 ## Installation
 
-Firstly, you must clone this repository:
+* Firstly, you must clone this repository:
 
 ```
 $ git clone https://github.com/lsa-pucrs/stm32-toolchain $HOME/stm32-toolchain
 ```
 
-For convenience, let's define a variable to indicate the path of the toolchain's root folder:
+* For convenience, let's define a variable to indicate the path of the toolchain's root folder:
 
 ```
 $ export STM32TOOLCHAIN=$HOME/stm32-toolchain
+```
+
+* Go into the repository's root folder and run git's submodule utility to initialize and update the external repositories:
+
+```
+$ cd $STM32TOOLCHAIN
+$ git submodule update --init
 ```
 
 ### ARM EABI GCC
@@ -61,7 +68,7 @@ has no support for the CS32F103C8T6.
 $ cd $STM32TOOLCHAIN/stm32f103c8t6
 ```
 
-* Run update to download the OpenCM library:
+* Run git's submodule update to download the newest version of the OpenCM library:
 
 ```
 $ git submodule update --init

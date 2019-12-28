@@ -7,6 +7,11 @@ research to find a flasher compatible with our chips ([CS32F103C8T6](https://pt.
 Below are general instructions for installation and usage. This repository contains all the necessary files, however it might
 be prudent to replace them with newer versions when available.
 
+
+## STLink firmware Update
+
+When you are using the STLink for the first time you might experience communication problems when flashing (e.g., LIBUSB timeout error) and the command 'st-flash --probe' miight not work. If this is the case, you will need to [update the STLink firmware](http://www.emcu.eu/how-to-update-the-st-link-fw-under-linux/) following this tutorial on how to do so.
+
 ## Dependancies
 
 * [ARM EABI GCC compiler](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) (NOTE: Must be "arm-none" version)
@@ -133,8 +138,3 @@ Alternatively, you can run "make flash" as root. If all went well, you should se
 * Olayiwola Ayinde's "[Programming STM32 on Linux](https://medium.com/@olayiwolaayinde/programming-stm32-on-linux-d6a6ee7a8d8d)" tutorial
 * Warren Guy's "[libopencm3 and FreeRTOS](https://github.com/ve3wwg/stm32f103c8t6)" template repository
 
-## Troubleshooting
-
-* Communication problems when flashing (e.g., LIBUSB timeout error)
-
-You may need to update your STLink firmware. Follow [this](http://www.emcu.eu/how-to-update-the-st-link-fw-under-linux/) tutorial on how to do so.

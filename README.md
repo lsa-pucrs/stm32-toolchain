@@ -12,7 +12,7 @@ be prudent to replace them with newer versions when available.
 
 When you are using the STLink for the first time you might experience communication problems when flashing (e.g., LIBUSB timeout error) and the command 'st-flash --probe' miight not work. If this is the case, you will need to [update the STLink firmware](http://www.emcu.eu/how-to-update-the-st-link-fw-under-linux/) following this tutorial on how to do so.
 
-## Dependancies
+## Dependencies
 
 * [ARM EABI GCC compiler](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) (NOTE: Must be "arm-none" version)
 * [Open source ARM Cortex-M microcontroller library](http://libopencm3.org/) 
